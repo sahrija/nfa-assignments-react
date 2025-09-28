@@ -5,7 +5,7 @@ export default function Headers() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <a className="navbar-brand fw-bold" href="#">
-          MyWebsite
+          BitesInk
         </a>
         <button
           className="navbar-toggler"
