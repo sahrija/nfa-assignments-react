@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-export default function Content() {
+export default function Home() {
     return (
         <div className="container text-center my-5">
             <div className="row align-items-center">

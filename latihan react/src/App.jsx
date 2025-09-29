@@ -1,25 +1,24 @@
-import { useState } from 'react'
 import './App.css'
-import Headers from './components/Header'
-import Content from './components/Content'
-import Footer from './components/Footer'
-import Team from './components/Team'
-import Contact from './components/Contact'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomeLayout from './layouts/HomeLayout'
+import Team from './pages/Team'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
 
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      <Headers />
-      <Content />
-      <Team />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<HomeLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -1,12 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router";
 
-export default function Headers() {
+export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand fw-bold" href="#">
-          BitesInk
-        </a>
+        <NavLink className="navbar-brand fw-bold" to="/">
+          Webgawai
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,19 +23,19 @@ export default function Headers() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="#home">
+              <NavLink className={`nav-link`} to="/">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#team">
+              <NavLink className={`nav-link`} to="/team">
                 Team
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <NavLink className={`nav-link`} to="/contact">
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
