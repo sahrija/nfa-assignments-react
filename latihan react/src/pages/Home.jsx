@@ -4,17 +4,21 @@ import React from "react";
 
 export default function Home() {
     return (
-        <div className="container text-center my-5">
-            <div className="row align-items-center">
-                <h1 className="fw-bold text-center fs-1">Selamat Datang Di Website Kami</h1>
-                <p className="lead my-4">
-                    Kami menyediakan solusi terbaik untuk kebutuhan digital Anda.
-                    Dengan tim profesional, kami siap membantu Anda mewujudkan ide
-                    menjadi kenyataan.
-                </p>
-                <a href="#contact" className="btn btn-primary btn-lg mt-3">
-                    Hubungi Kami
-                </a>
+        <div className="container my-5">
+            <div className="col-md-6 align-items-center">
+                <div>
+                    <h1 className="fw-bold fs-1">
+                        Solusi untuk mempublikasikan bisnis anda.
+                    </h1>
+                    <p className="lead my-4">
+                        Layanan company profile website untuk membuat bisnis anda lebih dikenal publik.
+                    </p>
+                </div>
+                <div>
+                    <a href="#contact" className="btn btn-primary btn-lg mt-3 w-fit">
+                        Hubungi Kami
+                    </a>
+                </div>
             </div>
         </div>
     );

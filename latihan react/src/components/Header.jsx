@@ -37,6 +37,11 @@ export default function Header() {
                 Contact
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className={`nav-link`} to="/books">
+                Books
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
